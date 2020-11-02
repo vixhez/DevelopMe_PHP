@@ -2,6 +2,8 @@
 
 require __DIR__ . "/vendor/autoload.php";
 
+// foreach method
+
 function squares ($numbers) {
     $squared = [];
 
@@ -10,6 +12,14 @@ function squares ($numbers) {
     }
 
     return $squared;
+};
+
+// collect method
+
+function squares ($numbers) {
+    $numbers = collect([2, 3, 4]);
+    $squared = $numbers->map(fn($n) => $n * $n);
+    return ($squared->all());
 };
 
 dump(
