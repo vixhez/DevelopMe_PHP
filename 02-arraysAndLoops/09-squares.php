@@ -4,15 +4,15 @@ require __DIR__ . "/vendor/autoload.php";
 
 // foreach method
 
-function squares ($numbers) {
-    $squared = [];
+// function squares ($numbers) {
+//     $squared = [];
 
-    foreach ($numbers as $number) {
-        $squared[] = $number * $number;    
-    }
+//     foreach ($numbers as $number) {
+//         $squared[] = $number * $number;    
+//     }
 
-    return $squared;
-};
+//     return $squared;
+// };
 
 // collect method
 
