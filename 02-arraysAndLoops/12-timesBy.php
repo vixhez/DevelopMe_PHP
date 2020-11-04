@@ -14,8 +14,8 @@ require __DIR__ . "/vendor/autoload.php";
 
 // collection method
 
-function timesBy ($number, $multiplier) {
-    return collect($number)->map(fn($num)=>$num * $multiplier);
+function timesBy ($numbers, $multiplier) {
+    return collect($numbers)->map(fn($num)=>$num * $multiplier)->all();
 }
 
 dump(
