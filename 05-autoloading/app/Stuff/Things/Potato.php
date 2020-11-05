@@ -12,7 +12,7 @@ class Potato
         dump($newWater . " water");
     }
 
-    public function hasGrown()
+    public function hasGrown() : bool
     {
         return $this->water >= 5 ? true : false;
     }
